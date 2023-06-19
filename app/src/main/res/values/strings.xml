@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Forecast Youtube</string>
+    <string name="warning">Without permission to access the device location, the app will not work.</string>
+    <string name="exception">Security Exception, no location available</string>
+</resources>

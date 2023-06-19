@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2">
+        <TextView
+            android:id="@+id/date"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/text" />
+            <TextView
+                android:id="@+id/time"
+                android:textAlignment="textStart"
+                android:textSize="20sp"
+                android:textColor="@color/green_neon"
+                app:layout_constraintTop_toBottomOf="@id/date"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/weather"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_weight="2"
+        android:textColor="@color/blue_neon"
+        style="@style/text" />
+    <TextView
+        android:id="@+id/temp"
+        android:textAlignment="textEnd"
+        android:textSize="26sp"
+        android:layout_weight="1"
+        android:textColor="@color/pink_neon"
+        style="@style/text" />
+</LinearLayout>
